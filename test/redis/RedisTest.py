@@ -7,7 +7,7 @@ import redis
 
 ONE_WEEK_IN_SECONDS = 7 * 86400
 VOTE_SCORE = 432
-pool = redis.ConnectionPool(host='192.168.105.9', port=6379)
+pool = redis.ConnectionPool(host='192.168.1.10', port=6379)
 client = redis.Redis(connection_pool=pool)
 
 
@@ -97,7 +97,7 @@ def operate_query_memory():
 def operate_pop_memory():
     start = time.time()
     print start
-    for i in range(0, 10000000):
+    for i in range(0, 100000):
         print client.lpop("list_name")
     end = time.time()
     print end
@@ -105,19 +105,20 @@ def operate_pop_memory():
 
 
 class Test01(unittest.TestCase):
-    def test_add_data(self):
-        add_data()
+    # def test_add_data(self):
+    #     add_data()
 
     # def test_operate_string(self):
     #     operate_string()
     #
     # def test_operate_memory(self):
     #     operate_memory()
-    #
+
     # def test_operate_query_memory(self):
     #     operate_query_memory()
-
+    #
     def test_operate_pop_memory(self):
+        # client.flushall()
         operate_pop_memory()
 
 
