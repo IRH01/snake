@@ -1,0 +1,75 @@
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(12000) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(11588) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(9468) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(11824) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(2772) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(9072) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(3548) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(4588) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(11804) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(6072) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(7028) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(11896) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(10120) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(3516) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:87] INFO  
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:88] INFO ***************************请求次数:0*******************************
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:89] INFO Thread:(7140) Time:Mon Nov 28 20:25:57 2016
+
+Mon, 28 Nov 2016 20:25:57 StressTest.py[line:70] INFO [Errno 11004] getaddrinfo failed
