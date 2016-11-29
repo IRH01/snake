@@ -26,9 +26,9 @@ sys.excepthook = log_uncaught_exceptions
 # 网关地址
 addr = '192.168.105.66'
 port = 8150
-restful = '/gj/order/details'
-token = 'auc_jsession_33d8749702b0a7732b3003648a95596b1abb2754'
-params = 'params={"orderNo":"XX20161128191631853904708"}'
+restful = '/lottery/draw.do'
+token = 'auc_jsession_306995609284b36213c1008c0c36a8c879b99de4'
+params = 'activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2'
 thread_count = 500  # 单次并发数量
 requst_interval = 1  # 请求间隔(秒)
 test_count = sys.maxsize  # sys.maxsize  # 指定测试次数
