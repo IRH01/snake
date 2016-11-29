@@ -7,7 +7,7 @@ import redis
 
 ONE_WEEK_IN_SECONDS = 7 * 86400
 VOTE_SCORE = 432
-pool = redis.ConnectionPool(host='192.168.105.9', port=6379)
+pool = redis.ConnectionPool(host='172.16.1.191', port=6379)
 client = redis.Redis(connection_pool=pool)
 
 
@@ -104,22 +104,17 @@ def operate_pop_memory():
     print end - start
 
 
+def clean_all():
+    client.flushall()
+
+
+def find_by_key():
+    client.client_list()
+
+
 class Test01(unittest.TestCase):
-    # def test_add_data(self):
-    #     add_data()
-
-    # def test_operate_string(self):
-    #     operate_string()
-    #
-    # def test_operate_memory(self):
-    #     operate_memory()
-
-    # def test_operate_query_memory(self):
-    #     operate_query_memory()
-    #
-    def test_operate_pop_memory(self):
-        client.flushall()
-        # operate_pop_memory()
+    def test_find_by_key(self):
+        find_by_key()
 
 
 if __name__ == '__main__':

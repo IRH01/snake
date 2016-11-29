@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import httplib
 import logging
 import sys
 import thread
 import time
 import traceback
+
+import requests
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
@@ -23,18 +24,17 @@ def log_uncaught_exceptions(exception_type, exception, tb):
 sys.excepthook = log_uncaught_exceptions
 
 # 网关地址
-addr = "http://192.168.105.66"
-port = 8111
-thread_count = 15  # 单次并发数量
-requst_interval = 10  # 请求间隔(秒)
+addr = '192.168.105.66'
+port = 8150
+restful = '/gj/order/details'
+token = 'auc_jsession_33d8749702b0a7732b3003648a95596b1abb2754'
+params = 'params={"orderNo":"XX20161128191631853904708"}'
+thread_count = 500  # 单次并发数量
+requst_interval = 1  # 请求间隔(秒)
 test_count = sys.maxsize  # sys.maxsize  # 指定测试次数
 
 # 字段说明,必须一一对应
 # login为空表示使用随机用户名
-
-param_list = [
-    {"login": "user1", "password": "qweqwe12"},
-]
 
 now_count = 0
 lock_obj = thread.allocate()
@@ -42,34 +42,22 @@ lock_obj = thread.allocate()
 
 def send_http():
     global now_count
-    httpClient = None
     try:
-        # params = urllib.urlencode({"params": {"orderNo": "XX20161128191631853904708"}})
-        # params = urllib.urlencode({})
-        # params = urllib.urlencode(
-        #     {"operationData": [{"token": "1234", "params": {"orderNo": "XX20161128191631853904708"}}]})
-        headers = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
+        url = 'http://' + addr + ':' + str(port) + restful + '?token=' + token + '&' + params
+        response = requests.get(url)
 
-        httpClient = httplib.HTTPConnection(addr, port, timeout=5)
-        httpClient.request("GET", "/gj/order/details?token=1234&params={\"orderNo\": \"XX20161128191631853904708\"}")
+        print '发送数据: ' + url
+        print '返回码: ' + str(response.status_code)
+        print '返回数据: ' + response.content
 
-        response = httpClient.getresponse()
-        # print '发送数据: ' + params
-        print '返回码: ' + str(response.status)
-        print '返回数据: ' + response.read()
-
-        # logging.info('发送数据: ' + params)
-        logging.info('返回码: ' + str(response.status))
-        logging.info('返回数据: ' + response.read())
-        # print response.getheaders() #获取头信息
+        logging.info('发送数据: ' + url)
+        logging.info('返回码: ' + str(response.status_code))
+        logging.info('返回数据: ' + response.content)
         sys.stdout.flush()
         now_count += 1
     except Exception, e:
         print e
         logging.info(e)
-    finally:
-        if httpClient:
-            httpClient.close()
 
 
 def test_func(run_count):

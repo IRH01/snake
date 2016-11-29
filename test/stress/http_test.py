@@ -7,10 +7,10 @@ import urllib
 httpClient = None
 
 try:
-    params = urllib.urlencode({"params": '{"orderNo": "XX20161128191631853904708"}', "token": "1234"})
+    params = urllib.urlencode({"orderNo": "XX20161128191631853904708"})
     httpClient = httplib.HTTPConnection('192.168.105.66', 8111, timeout=5000)
     headers = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
-    httpClient.request('GET', '/gj/order/details', params, headers)
+    httpClient.request('GET', '/gj/order/test?orderNo=1234', params, headers)
 
     response = httpClient.getresponse()
     print response.status
