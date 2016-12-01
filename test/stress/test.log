@@ -1,251 +1,688 @@
-Tue, 29 Nov 2016 22:26:32 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:32 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:32 stress_test.py[line:76] INFO Thread:(9472) Time:Tue Nov 29 22:26:32 2016
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:82] INFO ***************************请求次数:0*******************************
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:83] INFO Thread:(9368) Time:Wed Nov 30 09:23:47 2016
 
-Tue, 29 Nov 2016 22:26:32 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:41 stress_test.py[line:60] INFO ('Connection aborted.', error(10054, ''))
-Tue, 29 Nov 2016 22:26:41 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:41 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:41 stress_test.py[line:76] INFO Thread:(10252) Time:Tue Nov 29 22:26:41 2016
+Wed, 30 Nov 2016 09:23:47 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:47 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:82] INFO ***************************请求次数:1*******************************
+Wed, 30 Nov 2016 09:23:47 stress_test.py[line:83] INFO Thread:(8556) Time:Wed Nov 30 09:23:47 2016
 
-Tue, 29 Nov 2016 22:26:41 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:42 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x02CD0990>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:42 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:42 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:42 stress_test.py[line:76] INFO Thread:(7012) Time:Tue Nov 29 22:26:42 2016
+Wed, 30 Nov 2016 09:23:47 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:48 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:82] INFO ***************************请求次数:2*******************************
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:83] INFO Thread:(160) Time:Wed Nov 30 09:23:48 2016
 
-Tue, 29 Nov 2016 22:26:42 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:43 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x02CD0BB0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:43 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:43 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:43 stress_test.py[line:76] INFO Thread:(10888) Time:Tue Nov 29 22:26:43 2016
+Wed, 30 Nov 2016 09:23:48 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:48 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:82] INFO ***************************请求次数:3*******************************
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:83] INFO Thread:(14840) Time:Wed Nov 30 09:23:48 2016
 
-Tue, 29 Nov 2016 22:26:43 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:44 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x02CD0DD0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:44 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:44 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:44 stress_test.py[line:76] INFO Thread:(3980) Time:Tue Nov 29 22:26:44 2016
+Wed, 30 Nov 2016 09:23:48 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:48 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:82] INFO ***************************请求次数:4*******************************
+Wed, 30 Nov 2016 09:23:48 stress_test.py[line:83] INFO Thread:(14236) Time:Wed Nov 30 09:23:48 2016
 
-Tue, 29 Nov 2016 22:26:44 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:45 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x02CD0FF0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:45 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:45 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:45 stress_test.py[line:76] INFO Thread:(9400) Time:Tue Nov 29 22:26:45 2016
+Wed, 30 Nov 2016 09:23:48 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:5*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(9992) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:45 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:46 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F230>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:46 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:46 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:46 stress_test.py[line:76] INFO Thread:(14256) Time:Tue Nov 29 22:26:46 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:6*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(8276) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:46 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:47 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F450>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:47 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:47 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:47 stress_test.py[line:76] INFO Thread:(9684) Time:Tue Nov 29 22:26:47 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:7*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(5952) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:47 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:48 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x02CD0BD0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:48 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:48 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:48 stress_test.py[line:76] INFO Thread:(12412) Time:Tue Nov 29 22:26:48 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:8*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(8720) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:48 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:49 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x02CD0790>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:49 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:49 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:49 stress_test.py[line:76] INFO Thread:(12416) Time:Tue Nov 29 22:26:49 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:9*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(10048) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:50 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F130>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:50 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:50 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:50 stress_test.py[line:76] INFO Thread:(14612) Time:Tue Nov 29 22:26:50 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:10*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(5900) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:51 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F110>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:51 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:51 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:51 stress_test.py[line:76] INFO Thread:(9524) Time:Tue Nov 29 22:26:51 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:11*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(3736) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:52 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F650>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:52 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:52 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:52 stress_test.py[line:76] INFO Thread:(3824) Time:Tue Nov 29 22:26:52 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:12*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(11068) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:53 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F870>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:53 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:53 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:53 stress_test.py[line:76] INFO Thread:(13580) Time:Tue Nov 29 22:26:53 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:82] INFO ***************************请求次数:13*******************************
+Wed, 30 Nov 2016 09:23:49 stress_test.py[line:83] INFO Thread:(8400) Time:Wed Nov 30 09:23:49 2016
 
-Tue, 29 Nov 2016 22:26:53 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:54 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78FA90>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:54 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:54 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:54 stress_test.py[line:76] INFO Thread:(13456) Time:Tue Nov 29 22:26:54 2016
+Wed, 30 Nov 2016 09:23:49 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:14*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(13492) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:26:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:55 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78FCB0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:55 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:55 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:55 stress_test.py[line:76] INFO Thread:(14316) Time:Tue Nov 29 22:26:55 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:15*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(12752) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:26:55 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:56 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78FED0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:56 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:56 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:56 stress_test.py[line:76] INFO Thread:(12312) Time:Tue Nov 29 22:26:56 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:16*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(3488) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:26:56 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:57 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795110>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:57 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:57 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:57 stress_test.py[line:76] INFO Thread:(13724) Time:Tue Nov 29 22:26:57 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:17*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(15232) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:26:57 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:58 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795330>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:58 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:58 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:58 stress_test.py[line:76] INFO Thread:(12544) Time:Tue Nov 29 22:26:58 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:18*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(12592) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:26:58 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:26:59 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795550>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:26:59 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:26:59 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:26:59 stress_test.py[line:76] INFO Thread:(9652) Time:Tue Nov 29 22:26:59 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:19*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(4608) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:26:59 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:00 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795770>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:00 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:00 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:00 stress_test.py[line:76] INFO Thread:(14208) Time:Tue Nov 29 22:27:00 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:20*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(9764) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:00 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:01 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795990>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:01 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:01 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:01 stress_test.py[line:76] INFO Thread:(11792) Time:Tue Nov 29 22:27:01 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:21*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(7468) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:01 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:02 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795BB0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:02 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:02 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:02 stress_test.py[line:76] INFO Thread:(8428) Time:Tue Nov 29 22:27:02 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:22*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(7964) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:02 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:03 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795DD0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:03 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:03 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:03 stress_test.py[line:76] INFO Thread:(7520) Time:Tue Nov 29 22:27:03 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:23*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(2056) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:03 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:04 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795FF0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:04 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:04 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:04 stress_test.py[line:76] INFO Thread:(5452) Time:Tue Nov 29 22:27:04 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:24*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(5992) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:04 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:05 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795B90>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:05 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:05 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:05 stress_test.py[line:76] INFO Thread:(12848) Time:Tue Nov 29 22:27:05 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:25*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(15308) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:05 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:06 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C7957F0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:06 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:06 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:06 stress_test.py[line:76] INFO Thread:(14852) Time:Tue Nov 29 22:27:06 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:26*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(12600) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:06 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:07 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C795510>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:07 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:07 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:07 stress_test.py[line:76] INFO Thread:(8908) Time:Tue Nov 29 22:27:07 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:27*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(9924) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:07 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:08 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C7950F0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:08 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:08 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:08 stress_test.py[line:76] INFO Thread:(15000) Time:Tue Nov 29 22:27:08 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:28*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(8624) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:08 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:09 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78FFB0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:09 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:09 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:09 stress_test.py[line:76] INFO Thread:(12896) Time:Tue Nov 29 22:27:09 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:29*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(15320) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:09 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:10 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78FC70>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:10 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:10 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:10 stress_test.py[line:76] INFO Thread:(9692) Time:Tue Nov 29 22:27:10 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:30*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(14704) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:10 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:11 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F910>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:11 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:11 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:11 stress_test.py[line:76] INFO Thread:(8212) Time:Tue Nov 29 22:27:11 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:82] INFO ***************************请求次数:31*******************************
+Wed, 30 Nov 2016 09:23:50 stress_test.py[line:83] INFO Thread:(12796) Time:Wed Nov 30 09:23:50 2016
 
-Tue, 29 Nov 2016 22:27:11 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:12 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F5F0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:12 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:12 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:12 stress_test.py[line:76] INFO Thread:(10188) Time:Tue Nov 29 22:27:12 2016
+Wed, 30 Nov 2016 09:23:50 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:32*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(12640) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:12 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:13 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C78F150>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:13 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:13 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:13 stress_test.py[line:76] INFO Thread:(10076) Time:Tue Nov 29 22:27:13 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:33*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(12268) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:13 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:14 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x02CD0B90>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:14 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:14 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:14 stress_test.py[line:76] INFO Thread:(4080) Time:Tue Nov 29 22:27:14 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:34*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(12832) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:14 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:15 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x02CD0C70>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:15 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:15 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:15 stress_test.py[line:76] INFO Thread:(9640) Time:Tue Nov 29 22:27:15 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:35*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(9088) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:15 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:16 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C799130>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:16 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:16 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:16 stress_test.py[line:76] INFO Thread:(7136) Time:Tue Nov 29 22:27:16 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:36*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(14680) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:16 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:17 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C799350>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:17 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:17 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:17 stress_test.py[line:76] INFO Thread:(8524) Time:Tue Nov 29 22:27:17 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:37*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(4216) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:17 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:18 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C799570>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:18 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:18 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:18 stress_test.py[line:76] INFO Thread:(13304) Time:Tue Nov 29 22:27:18 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:38*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(14072) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:18 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:19 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C799790>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:19 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:19 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:19 stress_test.py[line:76] INFO Thread:(7316) Time:Tue Nov 29 22:27:19 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:39*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(11868) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:19 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:20 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C7999B0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:20 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:20 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:20 stress_test.py[line:76] INFO Thread:(3948) Time:Tue Nov 29 22:27:20 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:40*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(4332) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:20 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
-Tue, 29 Nov 2016 22:27:21 stress_test.py[line:60] INFO HTTPConnectionPool(host='192.168.105.66', port=8150): Max retries exceeded with url: /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&drawPhone=13510212603&drawUserId=488984&reqSource=b2c&sysType=2 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x5C799BD0>: Failed to establish a new connection: [Errno 10061] ',))
-Tue, 29 Nov 2016 22:27:21 stress_test.py[line:74] INFO  
-Tue, 29 Nov 2016 22:27:21 stress_test.py[line:75] INFO ***************************请求次数:0*******************************
-Tue, 29 Nov 2016 22:27:21 stress_test.py[line:76] INFO Thread:(14084) Time:Tue Nov 29 22:27:21 2016
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:41*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(15256) Time:Wed Nov 30 09:23:51 2016
 
-Tue, 29 Nov 2016 22:27:21 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 192.168.105.66
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:42*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(13068) Time:Wed Nov 30 09:23:51 2016
+
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:51 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:82] INFO ***************************请求次数:43*******************************
+Wed, 30 Nov 2016 09:23:51 stress_test.py[line:83] INFO Thread:(14388) Time:Wed Nov 30 09:23:51 2016
+
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:82] INFO ***************************请求次数:44*******************************
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:83] INFO Thread:(15068) Time:Wed Nov 30 09:23:52 2016
+
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:82] INFO ***************************请求次数:45*******************************
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:83] INFO Thread:(9084) Time:Wed Nov 30 09:23:52 2016
+
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:82] INFO ***************************请求次数:46*******************************
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:83] INFO Thread:(7704) Time:Wed Nov 30 09:23:52 2016
+
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:82] INFO ***************************请求次数:47*******************************
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:83] INFO Thread:(6520) Time:Wed Nov 30 09:23:52 2016
+
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:82] INFO ***************************请求次数:48*******************************
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:83] INFO Thread:(12932) Time:Wed Nov 30 09:23:52 2016
+
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:82] INFO ***************************请求次数:49*******************************
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:83] INFO Thread:(15272) Time:Wed Nov 30 09:23:52 2016
+
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:82] INFO ***************************请求次数:50*******************************
+Wed, 30 Nov 2016 09:23:52 stress_test.py[line:83] INFO Thread:(14140) Time:Wed Nov 30 09:23:52 2016
+
+Wed, 30 Nov 2016 09:23:52 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:53 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:82] INFO ***************************请求次数:51*******************************
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:83] INFO Thread:(14552) Time:Wed Nov 30 09:23:53 2016
+
+Wed, 30 Nov 2016 09:23:53 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:53 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:82] INFO ***************************请求次数:52*******************************
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:83] INFO Thread:(14788) Time:Wed Nov 30 09:23:53 2016
+
+Wed, 30 Nov 2016 09:23:53 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:53 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:82] INFO ***************************请求次数:53*******************************
+Wed, 30 Nov 2016 09:23:53 stress_test.py[line:83] INFO Thread:(11668) Time:Wed Nov 30 09:23:53 2016
+
+Wed, 30 Nov 2016 09:23:53 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:54*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(6784) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:55*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(15344) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:56*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(13892) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:57*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(7460) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:58*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(5860) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:59*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(13936) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:60*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(11348) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:61*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(9288) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:62*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(13104) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:63*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(11116) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:82] INFO ***************************请求次数:64*******************************
+Wed, 30 Nov 2016 09:23:54 stress_test.py[line:83] INFO Thread:(13460) Time:Wed Nov 30 09:23:54 2016
+
+Wed, 30 Nov 2016 09:23:54 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:55 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:82] INFO ***************************请求次数:65*******************************
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:83] INFO Thread:(14060) Time:Wed Nov 30 09:23:55 2016
+
+Wed, 30 Nov 2016 09:23:55 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:55 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:82] INFO ***************************请求次数:66*******************************
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:83] INFO Thread:(12324) Time:Wed Nov 30 09:23:55 2016
+
+Wed, 30 Nov 2016 09:23:55 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:55 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:82] INFO ***************************请求次数:67*******************************
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:83] INFO Thread:(10888) Time:Wed Nov 30 09:23:55 2016
+
+Wed, 30 Nov 2016 09:23:55 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:55 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:82] INFO ***************************请求次数:68*******************************
+Wed, 30 Nov 2016 09:23:55 stress_test.py[line:83] INFO Thread:(6116) Time:Wed Nov 30 09:23:55 2016
+
+Wed, 30 Nov 2016 09:23:55 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:82] INFO ***************************请求次数:69*******************************
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:83] INFO Thread:(8584) Time:Wed Nov 30 09:23:56 2016
+
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:82] INFO ***************************请求次数:70*******************************
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:83] INFO Thread:(11708) Time:Wed Nov 30 09:23:56 2016
+
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:82] INFO ***************************请求次数:71*******************************
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:83] INFO Thread:(12896) Time:Wed Nov 30 09:23:56 2016
+
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:82] INFO ***************************请求次数:72*******************************
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:83] INFO Thread:(13716) Time:Wed Nov 30 09:23:56 2016
+
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:82] INFO ***************************请求次数:73*******************************
+Wed, 30 Nov 2016 09:23:56 stress_test.py[line:83] INFO Thread:(8392) Time:Wed Nov 30 09:23:56 2016
+
+Wed, 30 Nov 2016 09:23:56 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:57 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:82] INFO ***************************请求次数:74*******************************
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:83] INFO Thread:(6000) Time:Wed Nov 30 09:23:57 2016
+
+Wed, 30 Nov 2016 09:23:57 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:57 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:82] INFO ***************************请求次数:75*******************************
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:83] INFO Thread:(9160) Time:Wed Nov 30 09:23:57 2016
+
+Wed, 30 Nov 2016 09:23:57 connectionpool.py[line:212] DEBUG Starting new HTTP connection (1): 172.16.1.135
+Wed, 30 Nov 2016 09:23:57 connectionpool.py[line:400] DEBUG http://172.16.1.135:8150 "GET /lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984 HTTP/1.1" 200 None
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:60] INFO 发送数据: http://172.16.1.135:8150/lottery/draw.do?token=auc_jsession_306995609284b36213c1008c0c36a8c879b99de4&activityId=54&reqSource=b2c&sysType=2&drawPhone=13510212603&drawUserId=488984
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:61] INFO 返回码: 200
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:62] INFO 返回数据: {"status":500,"msg":"您抽奖次数已用完！","code":0,"codeMsg":null,"data":false}
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:81] INFO  
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:82] INFO ***************************请求次数:76*******************************
+Wed, 30 Nov 2016 09:23:57 stress_test.py[line:83] INFO Thread:(11996) Time:Wed Nov 30 09:23:57 2016
+
