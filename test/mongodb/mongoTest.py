@@ -5,7 +5,7 @@ import time
 
 import pymongo
 
-db = pymongo.MongoClient(host="192.168.105.9", port=27016).irh
+db = pymongo.MongoClient(host="192.168.105.10", port=27016).irh
 
 
 def getAllCollections():
@@ -39,7 +39,7 @@ def getAllCollections():
 
 
 if __name__ == '__main__':
-    conn = pymongo.MongoClient(host='192.168.105.9', port=27016)
+    conn = pymongo.MongoClient(host='192.168.105.10', port=27016)
 
     StartTime = time.time()
     # db.drop_collection('circle')
