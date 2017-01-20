@@ -1,0 +1,1 @@
+{"options":{"capped":true,"size":1024,"max":10},"indexes":[{"v":1,"key":{"_id":1},"name":"_id_","ns":"irh.fix_user"}]}

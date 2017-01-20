@@ -1,37 +1,53 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+
+
 import os
 import time
 
 import pymongo
 
-db = pymongo.MongoClient(host="192.168.105.10", port=27016).irh
+# 安装python mongodb 依赖
+# 修改配置信息
+# su root & easy_install pymongo
+host = "192.168.105.10:27016"
+database_name = "irh"
+collection_name = "circle"
+mongodb_bin_path = "/usr/mongodb/bin/"
+db = pymongo.MongoClient(host=host)[database_name]
+
+
+# db.authenticate('username', 'password')
 
 
 def getAllCollections():
-    # db.authenticate('username', 'password')
-    os.popen("rm -rf /usr/mongodb/data/irh_bak")
-    dump_sh = "/usr/mongodb/bin/mongodump -h 192.168.105.10:27016 -d irh -o /usr/mongodb/data/irh_bak"
+    os.popen("rm -rf tmp/data/" + database_name + "_bak")
+    dump_sh = mongodb_bin_path + "/mongodump -h " + host + " -d " + database_name + \
+              " -o tmp/data/" + database_name + "_bak"
     os.popen(dump_sh)
 
     print "start export"
-    os.popen("rm -rf /usr/mongodb/bak/*")
-    for collection_name in db.collection_names():
-        if collection_name.startswith('circle') == 1 and str(collection_name).__len__() > 6:
-            export_sh = "/usr/mongodb/bin/mongoexport -h 192.168.105.10:27016 -d irh -c " + collection_name + " -o /usr/mongodb/bak/" + collection_name + ".json"
+    os.popen("rm -rf tmp/output/*")
+    for item in db.collection_names():
+        if item.startswith(collection_name) == 1 and str(item).__len__() > 6:
+            export_sh = mongodb_bin_path + "/mongoexport -h " + host + " -d " + database_name + " -c " + item \
+                        + " -o tmp/output/" + item + ".json"
             os.popen(export_sh)
 
-            print collection_name
+            print item
+
     print "finished export success"
     print "start import"
 
-    db.drop_collection('circle')
+    db.drop_collection(collection_name)
 
-    ls_str = os.popen("ls /usr/mongodb/bak/").read()
+    ls_str = os.popen("ls tmp/output/").read()
     files = ls_str.split("\n")
     for fileName in files:
-        if str(fileName).startswith('circle') == 1 and str(fileName).__len__() > 11 and str(fileName).endswith(".json"):
-            import_sh = "/usr/mongodb/bin/mongoimport -h 192.168.105.10:27016 -d irh -c circle --file /usr/mongodb/bak/" + fileName
+        if str(fileName).startswith(collection_name) == 1 and str(fileName).__len__() > 11 and str(fileName).endswith(
+                ".json"):
+            import_sh = mongodb_bin_path + "/mongoimport -h " + host + \
+                        " -d " + database_name + " -c " + collection_name + " --file tmp/output/" + fileName
             os.popen(import_sh)
             print fileName
 
@@ -39,14 +55,10 @@ def getAllCollections():
 
 
 if __name__ == '__main__':
-    conn = pymongo.MongoClient(host='192.168.105.10', port=27016)
-
     StartTime = time.time()
-    # db.drop_collection('circle')
-    db.circle.drop()
-    # getAllCollections()
+    getAllCollections()
     EndTime = time.time()
     print "StartTime : %s" % StartTime
     print "EndTime : %s" % EndTime
-    CostTime = round(EndTime - StartTime)
+    CostTime = EndTime - StartTime
     print "CostTime : %s" % CostTime
