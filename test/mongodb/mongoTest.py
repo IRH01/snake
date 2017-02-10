@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+'''
+mongodb数据迁移备份操作
+'''
 
 import os
 import time
