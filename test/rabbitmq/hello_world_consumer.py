@@ -4,7 +4,7 @@ import pika
 
 credentials = pika.PlainCredentials("guest", "guest")
 # 建立到代理服务器
-conn_params = pika.ConnectionParameters("192.168.105.10", credentials=credentials)
+conn_params = pika.ConnectionParameters("192.168.1.11", credentials=credentials)
 conn_broker = pika.BlockingConnection(conn_params)
 # 获得信道
 channel = conn_broker.channel()
@@ -17,9 +17,9 @@ channel.queue_bind(queue="hello-queue", exchange="hello-exchange", routing_key="
 
 
 # 用于处理传入消息的函数
-def msg_consumer(method, body):
+def msg_consumer(channel, method, header, body):
     # 消息确认
-    channel.basic.ask(delivery_tag=method.delivery_tag)
+    channel.basic_ack(delivery_tag=method.delivery_tag)
     # 停止消费并推出
     if body == "quit":
         channel.basic_cancel(consumer_tag="hello-consumer")
@@ -27,6 +27,7 @@ def msg_consumer(method, body):
     else:
         print body
     return
+
 
 # 订阅消费者
 channel.basic_consume(msg_consumer, queue="hello-queue", consumer_tag="hello-consumer")

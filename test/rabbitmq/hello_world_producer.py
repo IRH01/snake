@@ -5,7 +5,7 @@ import pika
 
 credentials = pika.PlainCredentials("guest", "guest")
 # 建立连接
-conn_params = pika.ConnectionParameters("192.168.105.10", credentials=credentials)
+conn_params = pika.ConnectionParameters("192.168.1.11", credentials=credentials)
 conn_broker = pika.BlockingConnection(conn_params)
 # 获取信道
 channel = conn_broker.channel()
