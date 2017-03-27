@@ -25,6 +25,7 @@ def msg_consumer(channel, method, header, body):
         channel.basic_cancel(consumer_tag="hello-consumer")
         channel.stop_consuming()
     else:
+
         print body
     return
 

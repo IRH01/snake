@@ -17,5 +17,5 @@ msg = "aaaabbbb123"
 msg_props = pika.BasicProperties()
 msg_props.conn_type = "text/plain"
 # 发布消息
-for i in range(10000000):
+for i in range(10):
     channel.basic_publish(body=msg, exchange="hello-exchange", properties=msg_props, routing_key="hola")
