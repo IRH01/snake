@@ -7,6 +7,9 @@ from selenium.common.exceptions import NoAlertPresentException
 from selenium.common.exceptions import NoSuchElementException
 
 
+##
+##需要下载chromedriver.exe放到python目录下面
+##
 class LoginTest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
