@@ -26,7 +26,7 @@ class LoginTest(unittest.TestCase):
         driver.find_element_by_id("passWord").clear()
         driver.find_element_by_id("passWord").send_keys("1234567")
         driver.find_element_by_id("denglu").click()
-        # driver.find_element_by_xpath("//div[@id='menu']/div/ul/li[17]/div").click()
+        driver.find_element_by_xpath("//div[@id='menu']/div/ul/li[17]/div").click()
         # driver.find_element_by_link_text(u"优惠券·零售").click()
         # driver.get("http://uwmhlq.tsh365.cn/views/coupon/couponlist.html?roletype=1&btype=b2c")
         # driver.find_element_by_id("createCoupon").click()
