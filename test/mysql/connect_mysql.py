@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-
+'''
+http://www.codegood.com/downloads
+'''
 import MySQLdb
 
 # 打开数据库连接
